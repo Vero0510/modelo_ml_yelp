@@ -13,8 +13,8 @@ from sklearn.ensemble import RandomForestRegressor
 app = FastAPI()
 
 # Cargamos los datos
-df_yelp = pd.read_parquet("D:\\Desktop\\ML_Yelp\\df_yelp.parquet")
-df_atributos = pd.read_parquet("D:\\Desktop\\ML_Yelp\\df_atributos.parquet")
+df_yelp = pd.read_parquet("df_yelp.parquet")
+df_atributos = pd.read_parquet("df_atributos.parquet")
 
 # Procesamos los datos y entrenamos el modelo
 city_counts = df_yelp['city'].value_counts()
